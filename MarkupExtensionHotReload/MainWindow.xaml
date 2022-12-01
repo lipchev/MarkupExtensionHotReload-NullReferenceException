@@ -1,0 +1,13 @@
+﻿<Window x:Class="MarkupExtensionHotReload.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MarkupExtensionHotReload"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="{local:GetNull}"/>
+        <!-- TODO while running the application try to duplicate the previous line in order to get Exception thrown: 'System.NullReferenceException' in Microsoft.VisualStudio.DesignTools.WpfTap.dll-->
+    </Grid>
+</Window>
